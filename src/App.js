@@ -1,6 +1,6 @@
 import './App.css';
 
-const todoList = [{id: 1, title:"1"},{id: 2, title:"12"},{id: 3, title:"13"}];
+const todoList = [{id: 1, title:"Better title"},{id: 2, title:"12"},{id: 3, title:"13"}];
 function App() {
   console.log(todoList)
   return <div>
