@@ -19,11 +19,15 @@ function App() {
     setTodoList([...todoList, newTodo]);
   }
 
+  function removeTodo(todoId) {
+    setTodoList(todoList.filter(todo => todo.id !== todoId));
+  }
+
   return (
     <>
       <h1>Todo List</h1>
       <AddTodoForm onAddTodo={addTodo} />
-      <TodoList todoList={todoList} />
+      <TodoList todoList={todoList} onRemoveTodo={removeTodo}/>
     </>
   );
 }
